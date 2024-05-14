@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebAPI課題</title>
+  <link rel="stylesheet" href="./asset/css/reset.css">
+  <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>距離見積もり機</h1>
+    <p class="btn">計算</p>
+  </header>
+  <main>
+    <div class="spFrame">
+      <div id="mymap"></div>
+      <div id="text">
+        <p id="distance">距離 : <span></span></p>
+      </div>
+    </div>
+  </main>
+
+
+  <script
+    src="http://www.bing.com/api/maps/mapcontrol?key=Apk4DTpsnSO0lJvPDy0WD7IL8o-tD2vL81o6YwNQYUAxKNJMcFcukv7OE7vnVM-a&callback=GetMap"
+    async defer></script>
+  <script src="./asset/js/main.js"></script>
+  <script src="./asset/js/operation.js"></script>
+</body>
+
+</html>
