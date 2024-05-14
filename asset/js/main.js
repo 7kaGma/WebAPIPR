@@ -4,7 +4,8 @@ let longitude;
 let latitude2=35.66954967381857;
 let longitude2=139.70300762497033;
 const R = Math.PI / 180;
-let kyori = distance();
+let kyori;
+
 
 /*==========
 現在地の取得とMap情報の取得
@@ -30,6 +31,9 @@ function successCP(position) {
   let point =map.getCenter();
   pin(point);
   destination();
+  kyori =Math.round(distance(latitude,longitude,latitude2,longitude2));
+  console.log(kyori);
+  document.getElementById("km").textContent=kyori+"km";
 }
 
 function erroCP(error) {
